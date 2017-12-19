@@ -1,0 +1,353 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+img{
+    display:block;
+    width:100%;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Open sans', sans-serif;
+}
+
+/*===============
+  Nav-area
+=================*/
+nav{
+   background:#efefef;
+   position:absolute;
+   width:100%;
+   overflow: hidden;
+   box-shadow: -2px -7px 47px 9px rgba(0,0,0,0.35);
+}
+
+nav ul{
+   overflow: hidden;
+   color:#fff;
+   margin:0;
+   padding:0;
+   text-align: center;
+   float:right;
+   transition: max-height 0.5s;
+   -webkit-transition: max-height 0.5s;
+   -o-transition: max-height 0.5s;
+   -moz-transition: max-height 0.5s;
+   -ms-transition: max-height 0.5s;
+}
+
+nav ul li{
+    display:inline-block;
+    padding:20px;
+}
+nav a{
+    text-decoration:none;
+    color:#282828;
+    font-size:20px;
+    padding:5px;
+}
+li > a{
+    position:relative;
+    color:#000;
+    text-decoration: none;
+}
+li > a:hover{
+    color:#000;
+}
+
+li > a:before{
+    content:"";
+    position:absolute;
+    width:100%;
+    background-color:#000;
+    height:2px;
+    bottom:0;
+    left:0;
+    visibility: hidden;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0;
+    -webkit-transition:all 0.3s ease-in-out 0;
+    -o-transition: all 0.3s ease-in-out 0;
+    -moz-transition: all 0.3s ease-in-out 0;
+}
+li > a:hover:before{
+    visibility: visible;
+    transform:scaleX(1);
+    -webkit-transform:scaleX(1);
+    -o-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+}
+.logo-section{
+    float:left;
+    padding:18px;
+    font-family: serif;
+}
+.hb-button{
+    float:right;
+    color:#ffffff;
+    background:#222;
+    font-size:18px;
+    padding:5px 10px;
+    border-radius: 3px;
+    display:none;
+    cursor:pointer;
+}
+/*==============
+  Banner-Area
+================*/
+#banner{
+   padding-top:60px;
+   position: relative;
+   z-index:-1000;
+}
+#banner .container{
+   position: absolute;
+   top:50%;
+   left:50%;
+   width:100%;
+   transform: translateX(-50%) translateY(-50%);
+   text-align: center;
+
+}
+#banner .inner-heading{
+    display: inline-block;
+    padding:10px;
+    margin-top: 0px;
+    color:#fff;
+}
+
+/*===================
+   Services-area
+=====================*/
+#services{
+    padding:100px 0 100px;
+    background-image:url('../images/bgcolor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#services h2{
+    margin-bottom: 90px;
+}
+
+#services .container .col-md-4{
+    margin: auto;
+    padding:20px;
+}
+#services .col-md-4 h3{
+    text-align: center;
+    padding:25px;
+}
+.col-md-4 i{
+    color: orange; 
+    font-size: 355%;
+}
+/*==============
+  Section-AreaA
+===============*/
+#areaA{
+    color:#efefef;
+    padding:100px 0;
+    background-image: url('../images/bg-areaA.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.widget{
+    width:80%;
+    margin:2em;
+}
+.widget p{
+    display:inline-block;
+    line-height: 1em;
+}
+
+.time{
+   font-family: Oswald, Arial;
+   text-align: center;
+   font-size: 1.5em;
+   margin-bottom:0.3125rem;
+   background: rgba(0,0,0,.5);
+   padding:20px;
+   width:100%;
+}
+
+.clock{
+    font-family: Oswald, Arial;
+    width:100%;
+    padding:20px;
+    font-size:4em;
+    text-align:center;
+    background:rgba(0,0,0,.5);
+}
+.clock .seconds-box{
+    display:inline-block;
+}
+.clock .seconds,
+.clock .ampm{
+    font-size:2rem;
+    display:block;
+}
+
+/*=================
+    Gallery-Area
+===================*/
+#gallery{
+    text-align: center;
+    padding:100px 0 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#gallery hr{
+    margin:0 auto;
+    width:94%;
+    margin-bottom: 2em;
+}
+#gallery img{
+    box-shadow:5px 5px 5px #282828;
+    border-radius:1%;
+}
+#gallery h2{
+    margin-top: 20px;
+    padding:30px;
+    margin-bottom:0;
+}
+#gallery p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:30px;
+}
+#gallery #btn{
+    padding:65px;
+}
+.myMessage{
+    background: #000;
+   color:#fff;
+}
+.rect{
+    display:inline-block;
+    height:40px;
+    width:100px;
+}
+/*==============
+   classA
+================*/
+#Switching{
+    text-align: center;
+    padding:100px 0 100px;
+    background: #ffffcc;
+}
+#Switching .classA,
+#Switching .classB{
+    margin:0 auto;
+}
+#Switching #btn1{
+    margin:20px;
+}
+#Switching img{
+    border-radius:2%;
+    box-shadow: 5px 5px 5px 5px #000;
+}
+.classA{
+   width:400px;
+   border:3px solid black;
+   background-color:white;
+   color:red;
+   font:normal 24px arial, helvetica, sans-serif;
+   padding:20px;
+}
+.classB{
+   width:400px;
+   border:3px dotted white;
+   background-color:black;
+   color:yellow;
+   font:italic bold 24px "Times New Roman", serif;
+   padding:20px;
+}
+
+/*==============
+  Section areaB
+================*/
+#areaB{
+    background:url('../images/bg-areaB.jpeg');
+    padding-top:100px;
+    padding-bottom: 200px;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:#efefef;
+}
+
+
+/*==============
+  Footer-Area
+===============*/
+footer{
+    padding:100px 100px 0;
+    height:auto;
+    color:#efefef;
+    background: #282828;
+    text-align:center;
+}
+footer .container p{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+footer .inline-social{
+    margin: 0 auto;
+    list-style: none;
+    padding:10px;
+}
+footer .inline-social li{
+    float:left;
+    padding:15px;
+}
+.inline-social i{
+    font-size: 25px;
+    border:1px solid #555;
+    padding:10px;
+    border-radius:50%;
+    width:45px;
+    height:45px;
+}
+.days{
+    display: inline-block;
+    color:#efefef;
+    margin:0 auto;
+    list-style: none;
+    padding: 10px;
+}
+@media screen and (max-width: 768px){
+    .logo-section{
+        float:none;
+    }
+    nav ul{
+        background:#ffffff;
+        width:100%;
+        max-height: 0;
+    }
+    nav ul .show{
+        max-height: 20em;   
+    }
+    nav ul li{
+        box-sizing: border-box;
+        width:100%;
+        padding:15px;
+    }
+    .hb-button{
+        display:inline;
+    }
+
+}
